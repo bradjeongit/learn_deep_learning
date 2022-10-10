@@ -1,3 +1,3 @@
 import torch
 
-print("Hello, boy")
+print("Hello, my boy")

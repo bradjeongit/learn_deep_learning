@@ -10,14 +10,14 @@ from torch.utils.data import DataLoader
 import math
 from torchvision.datasets import MNIST
 
-import time
+#import time
 
-start = time.time()
+#start = time.time()
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 cuda = True if torch.cuda.is_available() else False
 
-print("cuda:", cuda)
+#print("cuda:", cuda)
 Tensor = torch.cuda.FloatTensor if cuda else torch.FloatTensor
 
 torch.manual_seed(125)
@@ -170,4 +170,4 @@ for epoch in range(num_epochs):
 
             accuracy = 100 * correct / total
             print('Iteration: {}. Loss: {}. Accuracy: {}'.format(iter, loss.item(), accuracy))
-            print(time.time() - start)
+            #print(time.time() - start)
